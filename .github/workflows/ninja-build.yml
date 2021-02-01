@@ -124,7 +124,7 @@ jobs:
       run:  mkdir build
     - name: configure
       working-directory: build
-      run:  "../source/configure -cmake -opensource -confirm-license -ccache -no-pch
+      run:  "../source/configure -cmake -opensource -confirm-license -ccache -no-pch 
         -debug -nomake tests -nomake examples
         -prefix '${{ runner.temp }}'/install_dir
         ${{ matrix.configure_flags }}"
